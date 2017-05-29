@@ -8,22 +8,20 @@
 
 import UIKit
 
+private extension Selector {
+    static let singleTap = #selector(InfiniteInnerViewController.singleTap(_:))
+}
+
 final class InfiniteInnerViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-
     var pageIndex = 0
     var filePath = ""
-    fileprivate var isHidden = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setupImageView(filePath: filePath)
+        addEventListener()
     }
 
     fileprivate func setup() {
@@ -32,5 +30,18 @@ final class InfiniteInnerViewController: UIViewController {
 
     fileprivate func setupImageView(filePath: String) {
         imageView.image = UIImage(named: filePath)
+    }
+
+    fileprivate func addEventListener() {
+
+        let singleTapGesture = UITapGestureRecognizer(target: self,
+                                                      action:.singleTap)
+        singleTapGesture.numberOfTapsRequired = 1
+        imageView.isUserInteractionEnabled = true
+        imageView.addGestureRecognizer(singleTapGesture)
+    }
+
+    func singleTap(_ gesture: UITapGestureRecognizer) -> Void {
+        print(#function, pageIndex)
     }
 }
