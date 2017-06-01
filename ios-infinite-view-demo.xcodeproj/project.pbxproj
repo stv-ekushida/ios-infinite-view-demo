@@ -69,9 +69,9 @@
 		BC9C76261EDC10810023E577 = {
 			isa = PBXGroup;
 			children = (
+				BC9C76301EDC10820023E577 /* Products */,
 				BC9C76311EDC10820023E577 /* ios-infinite-view-demo */,
 				BC9C76461EDC10820023E577 /* ios-infinite-view-demoTests */,
-				BC9C76301EDC10820023E577 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +89,9 @@
 			children = (
 				BC9C76541EDC11E40023E577 /* Controllers */,
 				BCDEB83E1EDC19210039B6B5 /* Extensions */,
-				BC9C763E1EDC10820023E577 /* Info.plist */,
 				BCDEB83B1EDC15800039B6B5 /* Others */,
 				BCDEB83A1EDC15750039B6B5 /* Views */,
+				BC9C763E1EDC10820023E577 /* Info.plist */,
 			);
 			path = "ios-infinite-view-demo";
 			sourceTree = "<group>";
@@ -99,8 +99,8 @@
 		BC9C76461EDC10820023E577 /* ios-infinite-view-demoTests */ = {
 			isa = PBXGroup;
 			children = (
-				BC9C76471EDC10820023E577 /* ios_infinite_view_demoTests.swift */,
 				BC9C76491EDC10820023E577 /* Info.plist */,
+				BC9C76471EDC10820023E577 /* ios_infinite_view_demoTests.swift */,
 			);
 			path = "ios-infinite-view-demoTests";
 			sourceTree = "<group>";
@@ -108,10 +108,11 @@
 		BC9C76541EDC11E40023E577 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BCDEB8401EDC194D0039B6B5 /* top */,
 				BCDEB83F1EDC192F0039B6B5 /* Infinite */,
+				BCDEB8401EDC194D0039B6B5 /* top */,
 			);
 			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		BCDEB83A1EDC15750039B6B5 /* Views */ = {
@@ -120,35 +121,39 @@
 				BC9C76551EDC12380023E577 /* PageViewDataProvider.swift */,
 			);
 			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		BCDEB83B1EDC15800039B6B5 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				BC9C763B1EDC10820023E577 /* LaunchScreen.storyboard */,
 				BC9C76321EDC10820023E577 /* AppDelegate.swift */,
 				BC9C76391EDC10820023E577 /* Assets.xcassets */,
+				BC9C763B1EDC10820023E577 /* LaunchScreen.storyboard */,
 			);
 			name = Others;
+			path = Others;
 			sourceTree = "<group>";
 		};
 		BCDEB83E1EDC19210039B6B5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BCDEB8381EDC13A40039B6B5 /* UIStoryboard+Ex.swift */,
 				BCDEB8411EDC1CA00039B6B5 /* UIColor+Ex.swift */,
+				BCDEB8381EDC13A40039B6B5 /* UIStoryboard+Ex.swift */,
 			);
 			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BCDEB83F1EDC192F0039B6B5 /* Infinite */ = {
 			isa = PBXGroup;
 			children = (
-				BC9C76341EDC10820023E577 /* InfiniteViewController.swift */,
-				BC9C76521EDC11660023E577 /* InfiniteInnerViewController.swift */,
 				BCDEB83C1EDC18560039B6B5 /* InfiniteInnerViewController.storyboard */,
+				BC9C76521EDC11660023E577 /* InfiniteInnerViewController.swift */,
+				BC9C76341EDC10820023E577 /* InfiniteViewController.swift */,
 			);
 			name = Infinite;
+			path = Infinite;
 			sourceTree = "<group>";
 		};
 		BCDEB8401EDC194D0039B6B5 /* top */ = {
@@ -157,6 +162,7 @@
 				BC9C76361EDC10820023E577 /* Main.storyboard */,
 			);
 			name = top;
+			path = top;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +304,7 @@
 				BC9C76371EDC10820023E577 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		BC9C763B1EDC10820023E577 /* LaunchScreen.storyboard */ = {
@@ -306,6 +313,7 @@
 				BC9C763C1EDC10820023E577 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
